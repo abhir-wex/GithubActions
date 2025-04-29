@@ -37,5 +37,18 @@ namespace GradeCheck.nUnitTests
             //Assert
             Assert.AreNotEqual("B", grade);
         }
+
+        [Test]
+        public void GradePercentage_IsNotNull()
+        {
+            //Assign
+            var percentage = 70;
+
+            //Act
+            var grade = gradeCalculator.GetGrade(percentage);
+
+            //Assert
+            Assert.IsNotNull("B", grade);
+        }
     }
 }

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GradesChecker", "GradesChecker.csproj", "{1681FAE1-CB1D-40D4-BD37-3487183265FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradeCheck.nUnitTests", "..\GradeCheck.nUnitTests\GradeCheck.nUnitTests.csproj", "{C6DDECCE-97DE-4C66-B750-0AF328B82E9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1681FAE1-CB1D-40D4-BD37-3487183265FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1681FAE1-CB1D-40D4-BD37-3487183265FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1681FAE1-CB1D-40D4-BD37-3487183265FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6DDECCE-97DE-4C66-B750-0AF328B82E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6DDECCE-97DE-4C66-B750-0AF328B82E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6DDECCE-97DE-4C66-B750-0AF328B82E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6DDECCE-97DE-4C66-B750-0AF328B82E9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

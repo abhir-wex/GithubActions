@@ -26,5 +26,7 @@ jobs:
         dotnet-version: 8.0.x
     - name: Build
       run: dotnet build --no-restore
+      working-directory: GradesChecker
     - name: Test
       run: dotnet test --no-build --verbosity normal
+      working-directory: GradesChecker

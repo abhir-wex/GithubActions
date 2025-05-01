@@ -10,8 +10,8 @@ on:
     branches: [ "main" ]
     
 env:
-      Solution_Name: GradesChecker.sln                         # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: GradeCheck.nUnitTests.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Solution_Name: GradesChecker/GradesChecker.sln                         # Replace with your solution name, i.e. MyWpfApp.sln.
+      Test_Project_Path: GradeCheck.nUnitTests/GradeCheck.nUnitTests.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
     
 jobs:
   build:
@@ -25,8 +25,7 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore
-      working-directory: GradesChecker
+      run: dotnet restore GradesChecker/GradesChecker.csproj
     - name: Build
       run: dotnet build --no-restore
     - name: Test

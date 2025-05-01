@@ -10,6 +10,11 @@ permissions:
   checks: write
   pull-requests: write
 
+env:
+      Solution_Name: GradesChecker.sln                         # Replace with your solution name, i.e. MyWpfApp.sln.
+      Test_Project_Path: GradeCheck.nUnitTests.csproj                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+     
+
 jobs:
   run-tests:
     name: Run Tests
@@ -22,7 +27,7 @@ jobs:
       - name: Set up .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '9.x'
+          dotnet-version: '8.x'
 
       - name: Restore dependencies
         run: dotnet restore

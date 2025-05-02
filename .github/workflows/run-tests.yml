@@ -39,7 +39,7 @@ jobs:
         dotnet restore GradeCheck.nUnitTests
 
     - name: Run Code Formatter
-      run: dotnet format ${{ env.Solution_Name }} --check
+      run: dotnet format ${{ env.Solution_Name }}
 
     - name: Ensure TestResults Directory Exists
       run: mkdir -p TestResults

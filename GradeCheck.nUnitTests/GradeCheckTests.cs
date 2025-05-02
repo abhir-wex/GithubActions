@@ -64,17 +64,17 @@ namespace GradeCheck.nUnitTests
             Assert.AreEqual("F", grade);
         }
 
-        //[Test]
-        //public void GradePercentage_GreaterThan90_ReturnsA()
-        //{
-        //    //Assign
-        //    var percentage = 95;
+        [Test]
+        public void GradePercentage_GreaterThan90_ReturnsA()
+        {
+            //Assign
+            var percentage = 95;
 
-        //    //Act
-        //    var grade = gradeCalculator.GetGrade(percentage);
+            //Act
+            var grade = gradeCalculator.GetGrade(percentage);
 
-        //    //Assert
-        //    Assert.AreEqual("A", grade);
-        //}
+            //Assert
+            Assert.AreEqual("A", grade);
+        }
     }
 }

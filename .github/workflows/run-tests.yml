@@ -41,6 +41,10 @@ jobs:
     - name: Run Code Formatter
       run: dotnet format --check
 
+    - name: Ensure TestResults Directory Exists
+      run: mkdir -p TestResults
+      working-directory: GradesChecker
+  
     - name: Test with Coverage
       run: |
         dotnet test --no-build --verbosity normal --collect:"XPlat Code Coverage"
